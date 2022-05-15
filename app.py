@@ -9,7 +9,7 @@ import os
 
 app = Flask(__name__)
 app.secret_key = 'abcxyz'
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///db_store.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL_UPDATED', 'sqlite:///db_store.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 api = Api(app)
 
